@@ -1,0 +1,136 @@
+:root {
+
+  --color-primary: #01377d;
+  --color-primary-on: #ffffff;
+  --color-primary-on-v: #ffffff;
+
+  --color-secondary: #009dd1;
+  --color-secondary-on: #ffffff;
+  --color-secondary-on-v: #ffffff;
+
+  --color-tertiary: #97e7f5;
+  --color-tertiary-on: #ffffff;
+  --color-tertiary-on-v: #ffffff;
+
+  --color-box-primary: #f0f0f0;
+  --color-box-primary-on: #282828;
+  --color-box-primary-on-v: #a8a8a8;
+
+  --color-box-secondary: #f9f9f9;
+  --color-box-secondary-on: #525252;
+  --color-box-secondary-on-v: #525252;
+
+  --shadow: 0 0 2px 1px rgba(133, 130, 130, 0.15);
+  --border: 0;
+  --border-radius: 0.5em;
+
+  --box-shadow: 0 0 2px 1px rgba(133, 130, 130, 0.15);
+  --box-border: 0;
+  --box-border-radius: 0.5em;
+
+  --brightness-filter-s: brightness(1.2);
+  --brightness-filter-m: brightness(1.3);
+  --brightness-filter-l: brightness(1.4);
+
+  --brightness-filter-reverse-s: brightness(0.8);
+  --brightness-filter-reverse-m: brightness(0.7);
+  --brightness-filter-reverse-l: brightness(0.6);
+
+  --to-transparency-factor: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] {
+
+  --color-primary: #05aab9;
+  --color-primary-on: #383838;
+  --color-primary-on-v: #252525;
+
+  --color-secondary: #5792a2;
+  --color-secondary-on: #383838;
+  --color-secondary-on-v: #32596a;
+
+  --color-tertiary: #2b8c93;
+  --color-tertiary-on: #282828;
+  --color-tertiary-on-v: #888888;
+
+  --color-box-primary: #252525;
+  --color-box-primary-on: #b4b4b4;
+  --color-box-primary-on-v: #656565;
+
+  --color-box-secondary: #424242;
+  --color-box-secondary-on: #b9b9b9;
+  --color-box-secondary-on-v: #b4b4b4;
+
+  --shadow: 0;
+  --border: 0;
+  --border-radius: 0.5em;
+
+  --box-shadow: 0;
+  --box-border: 0;
+  --box-border-radius: 0.5em;
+
+  --brightness-filter-s: brightness(0.9);
+  --brightness-filter-m: brightness(0.9);
+  --brightness-filter-l: brightness(0.9);
+
+  --brightness-filter-reverse-s: brightness(1);
+  --brightness-filter-reverse-m: brightness(1);
+  --brightness-filter-reverse-l: brightness(1);
+
+  --to-transparency-factor: rgba(255,255,255,0.05);
+ 
+}
+
+$colorish-background-emphasis: var(--to-transparency-factor);
+
+$transparency-filter-s : opacity(0.8);
+$transparency-filter-m : opacity(0.6);
+$transparency-filter-l : opacity(0.4);
+
+$brightness-filter-s : var(--brightness-filter-s);
+$brightness-filter-m : var(--brightness-filter-m);
+$brightness-filter-l : var(--brightness-filter-l);
+
+$brightness-filter-reverse-s : var(--brightness-filter-reverse-s);
+$brightness-filter-reverse-m : var(--brightness-filter-reverse-m);
+$brightness-filter-reverse-l : var(--brightness-filter-reverse-l);
+
+$background-color : var(--color-box-primary);
+$background-onColor : var(--color-box-primary-on);
+$background-onColor-v : var(--color-box-primary-on-v);
+//boxes
+$box-color : var(--color-box-secondary);
+$box-onColor : var(--color-box-secondary-on);
+$box-onColor-v : var(--color-box-secondary-on-v);
+$box-shadow : var(--box-shadow);
+$box-border : var(--box-border);
+$box-border-radius : var(--box-border-radius);
+//cards
+$card-color : var(--color-box-secondary);
+$card-onColor : var(--color-box-secondary-on);
+$card-onColor-v : var(--color-box-secondary-on-v);
+$card-shadow : var(--shadow);
+$card-border : var(--border);
+$card-border-radius : var(--border-radius);
+//buttons primary
+$btn-primary-color : var(--color-primary);
+$btn-primary-onColor : var(--color-primary-on);
+$btn-primary-onColor-v: var(--color-primary-on);
+$btn-primary-shadow : var(--shadow);
+$btn-primary-border : var(--border);
+$btn-primary-border-radius : var(--border-radius);
+//buttons secondary
+$btn-secondary-color : var(--color-secondary);
+$btn-secondary-onColor : var(--color-secondary-on);
+$btn-secondary-onColor-v: var(--color-secondary-on);
+$btn-secondary-shadow : var(--shadow);
+$btn-secondary-border : var(--border);
+$btn-secondary-border-radius : var(--border-radius);
+//fragments
+$frag-primary-color : var(--color-primary);
+$frag-primary-onColor : var(--color-primary-on);
+$frag-secondary-color : var(--color-secondary);
+$frag-secondary-onColor : var(--color-secondary-on);
+$frag-tertiary-color : var(--color-tertiary);
+$frag-tertiary-onColor : var(--color-tertiary-on);
+

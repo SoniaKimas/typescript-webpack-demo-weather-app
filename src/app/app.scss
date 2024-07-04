@@ -1,0 +1,145 @@
+@import "components/map/map";
+@import "components/weather/weather";
+@import "components/search/search";
+@import "components/themeToggler/themeToggler";
+@import "components/country/country";
+
+
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+    color: $background-onColor;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0em 2em;
+    main {
+        flex: 1;
+    }
+}
+
+.app-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: $background-color;
+    color: $background-onColor;
+    // box-shadow: $nav-shadow;
+    // border: $nav-border;
+    padding: 0.6em;
+
+    div {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app-search-box {
+        width: 90%;
+
+        @media(min-width: 600px) {
+            width: 70%;
+        }
+
+        @media(min-width: 800px) {
+            width: 50%;
+        }
+    }
+}
+
+.app-footer {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 0em;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.container {
+    padding: 0.5em;
+}
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    //background-color: $box-color;
+    color: $box-onColor;
+    box-shadow: $box-shadow;
+    border: $box-border;
+    border-radius: $box-border-radius;
+}
+
+
+.section1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex: 1;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex: 1;
+}
+
+
+.map {
+    flex:1;
+}
+
+.forecast {
+    flex:1;
+}
+
+
+
+.address-display {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.realtime {
+    min-height: 5em;
+}
+
+
+
+
+
+@media (min-width: 800px) {
+    .mid-container {
+        flex-direction: row;
+
+        .section1 {
+            flex: 1
+        }
+    
+        .section2 {
+            flex: 1
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.weather-realtime-info-pair{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+
+  .material-symbols-outlined {
+    font-size: 2em;
+    color:$frag-secondary-color 
+  };
+
+  border: 1px solid $frag-secondary-color;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  font-size:0.8em
+}
+
+
+.wt-UListCards {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  //justify-content:center;
+  gap: 0.2em;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.wt-card {
+  padding: 0.3em;
+  flex: 1 0 auto;
+}
+
+.wt-cardPair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3em;
+  gap: 0.1em;
+
+  .material-symbols-outlined {
+    font-size: 1.6em;
+    color:$frag-secondary-color 
+  }
+}
+
+.wt-cardPairText {
+  //flex: 1;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.wt-cardDate {
+  font-size: 0.9em;
+  height: fit-content;
+  text-align: center;
+  padding: 0.3em;
+  color:$frag-tertiary-color;
+  font-weight: bold;
+}

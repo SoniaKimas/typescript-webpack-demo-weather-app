@@ -1,0 +1,26 @@
+@import "variables";
+@import "buttons";
+@import "cards";
+@import "custom-toggles";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}   
+
+// input {
+//   &:focus {
+//     outline: none;
+//   }
+//   width: 0;
+// }

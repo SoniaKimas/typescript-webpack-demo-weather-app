@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather App</title>
+  <script type="module" src="../dist/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="icon" href="src/assets/img1.ico" type="image/x-icon" />
+  <script async src="https://maps.googleapis.com/maps/api/js?key={--key--}&loading=async">
+    defer
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="app-header" class="app-header"></div>
+
+    <main>
+      <div class="top-container container">
+        <div id="address-display" class="address-display"></div>
+        <div id="realtime" class="realtime"></div>
+      </div>
+      <div class="mid-container container">
+
+        <div id="section1" class="section section1">
+          <div id="map" class="map card-media"></div>
+        </div>
+
+        <div id="section2" class="section section2">
+          <div id="forecast" class="forecast card"></div>
+        </div>
+
+
+      </div>
+
+      <div class="bottom-container container">
+        <div id="country-images" class="country-images card-container-wrap"></div>
+      </div>
+
+    </main>
+
+    <div id="app-footer" class="app-footer"></div>
+  </div>
+</body>
+
+</html>

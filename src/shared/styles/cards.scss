@@ -1,0 +1,75 @@
+@mixin card-common-styles-base {
+    background-color: $colorish-background-emphasis;
+    color: $card-onColor;
+    box-shadow: $card-shadow;
+    border: $card-border;
+    box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+    }
+}
+
+@mixin card-common-styles {
+    @include card-common-styles-base;
+    border-radius: $card-border-radius;
+}
+
+.card-rounded{
+    @include card-common-styles-base;
+    border-radius: 50%;
+}
+
+.card {
+    @include card-common-styles;
+}
+
+.card-media {
+    @include card-common-styles;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-content {
+    @include card-common-styles;
+    //padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+} 
+
+.card-title {
+    font-weight: bold;
+}
+.card-body-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.card-body-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+
+}
+
+
+.card-container-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    overflow: auto;
+}
+.card-container-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    overflow: auto;
+}
+.card-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5em;
+}

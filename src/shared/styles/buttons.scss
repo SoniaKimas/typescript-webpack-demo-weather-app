@@ -1,0 +1,67 @@
+@mixin btn-round-common-styles {
+    border: none;
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .material-symbols-outlined {
+        font-size: 1.4em;
+    }
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+    &:disabled {
+        filter: grayscale(100%) $brightness-filter-l;
+        cursor: not-allowed;
+    }
+}
+
+.btn-round-primary {
+    @include btn-round-common-styles;
+    background-color: $btn-primary-color;
+    color: $btn-primary-onColor;
+}
+
+.btn-round-secondary {
+    @include btn-round-common-styles;
+    background-color: $btn-secondary-color;
+    color: $btn-secondary-onColor ;
+}
+
+@mixin btn-onlyText-common-styles {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    &:hover {
+        filter: brightness(1.2);
+        text-decoration: underline;
+    }
+
+    &:disabled {
+        filter: grayscale(100%);
+        cursor: not-allowed;
+    }
+}
+
+
+
+
+.btn-onlyText-primary {
+    @include btn-onlyText-common-styles;
+    color: $btn-primary-color;
+}
+.btn-onlyText-secondary {
+    @include btn-onlyText-common-styles;
+    color: $btn-secondary-color;
+}

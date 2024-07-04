@@ -1,0 +1,38 @@
+.app-search-box {
+
+  background-color: $box-color;
+  box-shadow: $box-shadow;
+  border: $box-border;
+
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  height: 2.6em;
+  border-radius: 1.3em;
+  padding: 0.3em 0.4em 0.3em 0.4em;
+
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.app-search-box-input {
+
+  color: $background-onColor;
+  
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  font-size: 1em;
+  height: 2em;
+  border: none;
+  flex: 1;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+  min-width: 2em;
+}
+
